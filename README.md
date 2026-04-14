@@ -27,7 +27,7 @@ The pipeline follows these main steps:
 - `stereo_vo_base.py` — stereo camera model and VO pipeline implementation
 - `requirements.txt` — Python dependencies
 - `.gitignore` — excludes generated files and local data products
-- `Figures/` — optional result images for README visualization
+- `Figures/` — result images for README visualization
 
 ## Features
 - Stereo feature matching with SIFT
@@ -68,6 +68,14 @@ The script will:
 - compute trajectory RMSE,
 - plot the estimated and ground-truth trajectories.
 
+## Figures
+
+### Inlier Feature Visualization
+![Inlier Features](Figures/inliers_example.png)
+
+### Estimated Trajectory vs Ground Truth
+![Trajectory](Figures/trajectory.png)
+
 ## Example Outputs
 Typical outputs include:
 - inlier feature tracking visualization
@@ -84,14 +92,14 @@ Typical outputs include:
 ## Repository Structure
 ```text
 stereo-visual-odometry-ransac/
-├─ run_vo.py
-├─ stereo_vo_base.py
+├─ Figures/
+│  ├─ inliers_example.png
+│  └─ trajectory.png
+├─ .gitignore
 ├─ README.md
 ├─ requirements.txt
-├─ .gitignore
-└─ Figures/
-   ├─ trajectory.png
-   └─ inliers_example.png
+├─ run_vo.py
+└─ stereo_vo_base.py
 ```
 
 ## Future Improvements
