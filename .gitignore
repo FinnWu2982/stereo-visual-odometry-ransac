@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.npy
+*.mat
+*.avi
+.DS_Store
